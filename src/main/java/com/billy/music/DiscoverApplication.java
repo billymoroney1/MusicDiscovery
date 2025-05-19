@@ -20,6 +20,7 @@ public class DiscoverApplication implements CommandLineRunner {
 	public void run(String... args) {
 		BandcampScraper scraper = new BandcampScraper("https://bandcamp.com/billymoroney");
 		scraper.getProfile();
+		scraper.getLibrary();
 	}
 
 }
